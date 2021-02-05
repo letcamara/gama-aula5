@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+  -webkit-font-smoothing: antialiased !important;
+  text-align: justify;
+}
+
+h2 {
+  color: #573e7d;
+  font-weight: bold;
+}
+
+header {
+  background-color: #573e7d;
+}
+
+header li > a{
+  color: #fff !important;
+}
+
+.project_bg-color {
+  background-color: #d4c7eb;
+}
+.project_bg-color-gray {
+  background-color: #f3f3f3;
+}
+
+footer {
+  background: #f3f3f3;
+}
