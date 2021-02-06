@@ -1,8 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   outline: 0;
   box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 body {
@@ -23,11 +31,91 @@ header li > a{
   color: #fff !important;
 }
 
-.project_bg-color {
-  background-color: #d4c7eb;
+#categories {
+  display: flex;
+  flex-wrap: wrap;
+  background: #ff5722;
+  
 }
-.project_bg-color-gray {
-  background-color: #f3f3f3;
+
+#categories > ul {
+  display: flex;
+  flex-wrap: wrap;
+  color: #f8f1e4;
+  font-weight: 800;
+  justify-content: center;
+  padding: .5em;
+  justify-content: space-between;
+  width: 100%;
+}
+
+#categories ul > li{
+  cursor: pointer;
+  padding: .5em 1em;
+  background: #e34f21;
+}
+
+#categories ul > li:hover{
+  background-color: #fff;
+  color: #ff5722;
+}
+
+#categories ul > li:last-child{
+  margin-right: none;
+}
+
+#root {
+  height: 100vh;
+  background:url('../assets/bck_chuck.jpg') no-repeat 0 0;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#root > div {
+  background-color: #fff;
+  border-radius: 16px;
+  text-align: center;
+  padding: 3em;
+  margin: 3em;
+  -webkit-box-shadow: -4px 2px 15px 2px rgb(79 79 79 / 50%);
+  box-shadow: -4px 2px 15px 2px rgb(79 79 79 / 50%);
+  max-width: 560px;
+  border: 13px solid #ff5723;
+}
+
+#avatar, 
+#joke--search-term {
+  margin-bottom: 1em;
+}
+
+#joke {
+  font-size: 1.5em;
+  font-family: 'Sriracha', cursive;
+  color: #ff5723;
+  border-top: 1px solid #ff5723;
+  padding-top: 0.5em;
+}
+
+.joke--search-box {
+  border: 1px solid #666666;
+  padding: 2px 15px;
+  font-family: 'Sriracha', cursive;
+  color: #666666;
+  font-size: 1.2em;
+}
+
+button {
+  background: #666666;
+  border: none;
+  padding: 6px 26px;
+  color: white;
+}
+
+button:hover {
+  background: #ff5723;
+
 }
 
 footer {
